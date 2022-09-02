@@ -101,7 +101,7 @@ def train_model(
             train_acc = compute_accuracy(model, train_loader, device=device)
             valid_acc = compute_accuracy(model, valid_loader, device=device)
             print(f'Epoca: {epoch+1:03d}/{num_epochs:03d} '
-                  f'| Train: {train_acc :.2f}% '
+                  f'| Tr ain: {train_acc :.2f}% '
                   f'| Validation: {valid_acc :.2f}%')
             train_acc_list.append(train_acc.item())
             valid_acc_list.append(valid_acc.item())
